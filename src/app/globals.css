@@ -1,0 +1,81 @@
+/* app/globals.css */
+
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global background and animation */
+
+
+@keyframes fadeInBackground {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Smooth animation for cards and hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Text styles for better readability */
+h1, h2, h3, p, a {
+  color: #333333; /* Default dark text for readability */
+}
+
+a {
+  color: #8B0000; /* Burgundy for links */
+}
+
+a:hover {
+  color: #700000; /* Slightly darker shade for hover */
+}
+
+/* Global styles for headers */
+h1, h2, h3 {
+  font-family: 'Georgia', serif; /* Serif font for a more classic look */
+}
+
+/* Section background colors */
+.bg-primary {
+  background-color: #8B0000; /* Burgundy background for sections */
+}
+
+.bg-secondary {
+  background-color: #F5F5DC; /* Soft beige for background sections */
+}
+
+/* Specific text colors */
+.text-primary {
+  color: #8B0000; /* Burgundy color for text */
+}
+
+.text-secondary {
+  color: #F5F5DC; /* Beige color for text */
+}
+
+.text-dark {
+  color: #333333; /* Dark color for general text */
+}
+
+/* Global card styling (for post previews or book cards) */
+.card {
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
